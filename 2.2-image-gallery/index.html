@@ -9,12 +9,14 @@
 <body>
     <header>
         <h1>Photo Search App</h1>
+    <div class="search-container">
         <input type="text" id="search-input" placeholder="Search for photos..." autofocus>
+        <span id="search-icon">🔍</span>
         <button id="clear-search">✖</button>
+    </div>
     </header>
 
     <main id="photo-container">
-        <!-- Images will be displayed here -->
     </main>
 
     <footer class="footer">
@@ -34,6 +36,10 @@
             </div>
         </div>
     </footer>
+<div id="modal" class="modal">
+    <span id="close-modal" class="close-modal">✖</span>
+    <img id="modal-img" class="modal-content" src="" alt="Enlarged Photo">
+</div>
 
     <script src="./index.js"></script>
 </body>
